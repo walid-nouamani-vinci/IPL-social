@@ -1,8 +1,8 @@
 import { emailValidator } from "../src/emailValidator";
 
 describe("Email validation", () => {
+    const emailValidation = new emailValidator();
     it("should return true when given email", () => {
-        const emailValidation = new emailValidator();
 
         const actual = emailValidation.isValidEmail("test@email.com");
 
@@ -10,7 +10,6 @@ describe("Email validation", () => {
     })
 
     it("should return false when given email without @", () => {
-        const emailValidation = new emailValidator();
 
         const actual = emailValidation.isValidEmail("testemail.com");
 
