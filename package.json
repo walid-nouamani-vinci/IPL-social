@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "npx jest",
     "prettier": "npx prettier --write .",
     "lint": "eslint . --ext .ts,.tsx,.mts,.cts",
     "format": "prettier --write .",
