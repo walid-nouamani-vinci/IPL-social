@@ -5,7 +5,9 @@ export class emailValidator {
         if (atIndex <= 0) return false;
 
         if (email.includes(" ")) return false;
-                
+        
+        const parts = email.split("@");
+        if (parts.length !== 2) return false;
         return true;
     }
 }
